@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+a{ font-family: Verdana, Geneva, Tahoma, sans-serif;}
+header {
+    height: 93vh;
+    z-index: 2;
+    position: relative;
+    display: flex;
+
+}
+nav {
+    width: 100%;
+    color: white;
+    position: absolute;
+    display: flex;
+}
+nav img {
+    display: flex;
+    width: 11rem;
+    height: auto;
+    margin-top: 0.5rem;
+    z-index: 2;
+
+}
+.SCOUT {
+    width: 100%;
+}
+.SCOUT img {
+    position: absolute;
+    display: flex;
+    left: 110rem;
+    margin-top: 0;
+    width: 60px;
+    top: 4.5rem;
+}
+main {
+    height: 90vh;
+}
+
+.BACKGROUND {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+
+.BACKGROUND img {
+    display: block;
+    width: 100%;
+    height: 95vh;
+}
+
+.BACKGROUND::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7) 90%),
+        linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 90%);
+    pointer-events: none;
+}
+.Maintext {
+    position: absolute;
+}
+.mainH1{
+    color: white;
+    font-size: 160px;
+    font-family:"Oswald", sans-serif ;
+    margin-left: 5rem;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    border: 0;
+    top: -3rem;
+}
+.Maintext p {
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    font-size: 30px;
+    top: 33rem;
+    position: relative;
+    width: 54%;
+    margin-left: 7rem;
+}
+
+.ADDONS{
+    left: 79rem;
+    top: 30rem;
+    position: absolute;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    opacity: 70%;
+}
+.ADDONS2 img  {
+    left: 93rem;
+    opacity: 100%;
+    position: absolute;
+    display: flex;
+    width: 150px;
+    opacity: 70%;
+    z-index: 2;
+    padding-top: 75px;
+}
+.DATA {
+    width: 100%;
+    height: 100vh;
+}
+.DESCRIPTION {
+    width: 100%;
+}
+.DH1 {
+    position: absolute;
+    display: flex;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    margin-left: 5rem;
+    margin-top: 6rem;
+
+}
+
+.DP {
+    position: absolute;
+    display: flex;
+    font-size: 30px; 
+    margin-left: 27rem;
+    width: 40%;
+    margin-top: 13.5rem;
+    text-align: justify;
+}
+
+.DP2 {
+    position: absolute;
+    display: flex;
+    font-size: 30px; 
+    margin-left: 5rem;
+    width: 58.5%;
+    margin-top: 25rem;
+    text-align: justify;
+}
+
+.DIMG img {
+    position: absolute;
+    display: flex;
+    width: 500px;
+    left: 82.5rem;
+    padding-top: 150px;
+    height: 700px;
+}
+.WHO {
+    width: 100%;
+    height: 75vh;
+}
+.WH1 {
+    position: absolute;
+    display: flex;
+    font-size: 30PX;
+    font-family: "Oswald", sans-serif;
+    left: 5rem;
+    padding-top: 10px;
+}
+.CARD1 {
+    width: 100%;
+    display: flex;
+    padding-top: 50PX;
+    left: 4REM;
+    position: absolute;
+}
+.IMGD  {
+    width: 400px;
+    height: 600px;
+    position: relative;
+
+    
+}
+.IMGD img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+.TD {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.6s;
+    text-align: center;
+}
+
+.TD:hover {
+    opacity: 1;
+}
+.CARD1 h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.TD > *{
+    transform:  translateY(25px);
+    transition: transform 0.6s;
+}
+
+.TD:hover > *{
+    transform: translateY(0px);
+  
+}
+
+.CARD2 {
+    width: 100%;
+    display: flex;
+    padding-top: 50PX;
+    position: absolute;
+    left: 33rem;
+}
+.IMGB  {
+    width: 400px;
+    height: 600px;
+    position: relative;
+
+    
+}
+.IMGB img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+.TDB {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.TDB:hover {
+    opacity: 1;
+}
+.CARD2 h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.TDB > *{
+    transform:  translateY(25px);
+    transition: transform 0.6s;
+}
+
+.TDB:hover > *{
+    transform: translateY(0px);
+  
+}
+.CARD3 {
+    width: 100%;
+    display: flex;
+    padding-top: 50PX;
+    position: absolute;
+    left: 62rem;
+}
+.IMGPA  {
+    width: 400px;
+    height: 600px;
+    position: relative;
+
+    
+}
+.IMGPA img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+.TDPA {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.TDPA:hover {
+    opacity: 1;
+}
+.CARD3 h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.TDPA > *{
+    transform:  translateY(25px);
+    transition: transform 0.6s;
+}
+
+.TDPA:hover > *{
+    transform: translateY(0px);
+  
+}
+.CARD4 {
+    width: 100%;
+    display: flex;
+    padding-top: 50PX;
+    position: absolute;
+    left: 91rem;
+}
+.IMGPO  {
+    width: 400px;
+    height: 600px;
+    position: relative;
+
+    
+}
+.IMGPO img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+.TDPO {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.TDPO:hover {
+    opacity: 1;
+}
+.CARD4 h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.TDPO > *{
+    transform:  translateY(25px);
+    transition: transform 0.6s;
+}
+
+.TDPO:hover > *{
+    transform: translateY(0px);
+  
+}
+
+.IMGS {
+    width: 100%;
+    height: 160vh;
+}
+
+.IMGS h1 {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald", sans-serif  ;
+    padding-top: 50px;
+}
+.IMG1 img {
+    position: absolute;
+    display: flex;
+    width: 900px;
+    padding-top: 1000px;
+    left: 5rem;
+    padding-bottom: 100px;
+}
+.IMG2 img {
+    position: absolute;
+    display: flex;
+    width: 700px;
+    padding-top: 1100px;
+    left: 70rem;
+}
+
+.IMG3 img {
+    position: absolute;
+    display: flex;
+    width: 1600px;
+    left: 10rem;
+}
+
+.TOPIMG  {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TOPIMG img {
+    bottom: 120px;
+
+
+}
+@media (max-width: 700px) {
+   .MAIN {
+    height: 90vh;
+   }
+   nav img {
+    display: flex;
+    width: 3rem;
+    height: auto;
+    margin-top: 1rem;
+    z-index: 2;
+    margin-left: 1rem;
+}
+.BACKGROUND img {
+    display: block;
+    width: 100%;
+    height: 60vh;
+}
+
+.mainH1{
+    font-size: 50px;
+    top: 6rem;
+    margin-left: 2rem;
+}
+.Maintext p {
+    font-size: 20px;
+    top: -1rem;
+    top: 17rem;
+    margin-left: 3rem;
+    width: 50%;
+    text-align: justify;
+}
+.SCOUT img {
+    position: absolute;
+    display: flex;
+    left: 23rem;
+    margin-top: 0;
+    width: 30px;
+    top: 1.8rem;
+}
+.ADDONS{
+    left: 13rem;
+    top: 27rem;
+    position: absolute;
+    display: flex;
+    height: 120px;
+    width: 600px;
+    opacity: 100%;
+}
+.MAIN {
+    height: 58vh;
+}
+}
